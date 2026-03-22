@@ -41,14 +41,13 @@ function playRound(humanChoice, computerChoice) {
 
     if (humanScore >= winningScore) {
         div.textContent = "Congratulations! You won the game!";
-        div.textContent += " First to " + winningScore + " wins the game!";
+       
         rock_button.disabled = true;
         paper_button.disabled = true;
         scissors_button.disabled = true;
     }
     else if (computerScore >= winningScore) {
         div.textContent = "Sorry! The computer won the game!";
-        div.textContent += " First to " + winningScore + " wins the game!";
         rock_button.disabled = true;
         paper_button.disabled = true;
         scissors_button.disabled = true;
